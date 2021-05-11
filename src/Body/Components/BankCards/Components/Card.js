@@ -23,7 +23,7 @@ export const Card=(props)=>{
     }
     const card=GetCard(props.card.type);
     return (
-        <View>
+        <View >
             <LinearGradient
             colors={[props.card.colors[0], props.card.colors[1]]}
             start={{x: 0, y: 0}} end={{x: 1, y: 0}}
@@ -63,7 +63,11 @@ const styles = StyleSheet.create({
     Card: {
         height:340,
         borderRadius:10,
-        margin:10
+        margin:10,
+        shadowColor: 'rgba(164, 130, 238, 1)',
+        shadowOpacity: 1,
+        shadowRadius:10,
+        zIndex:1
         
     },
     CardNumber:{

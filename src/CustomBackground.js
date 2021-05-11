@@ -7,22 +7,22 @@ export const CustomBackground=(props)=>{
 const ElipseDate=[
     {
         name:'1',
-        height:346.37,
+        height:330,
         width:262,
         position:'absolute',
-        backgroundColor:'rgba(164, 130, 238, 2)',
-        left:198,
-        top:'4%',
+        backgroundColor:'rgba(164, 130, 238, 0.02)',
+        left:220,
+        top:'15%',
         borderRadius:200
     },
     {
         name:'2',
-        height:322.57,
-        width:244,
+        height:240,
+        width:240,
         position:'absolute',
-        backgroundColor:'rgba(130, 160, 238, 2)',
-        left:198,
-        top:'40%',
+        backgroundColor:'rgba(130, 160, 238, 0.02)',
+        left:280,
+        top:'50%',
         borderRadius:200
     },
     {
@@ -30,9 +30,20 @@ const ElipseDate=[
         height:388.67,
         width:294,
         position:'absolute',
-        backgroundColor:'rgba(130, 160, 238, 2)',
+        backgroundColor:'rgba(130, 160, 238, 0.02)',
         left:198,
-        top:'60%',
+        top:'70%',
+        borderRadius:150
+    }
+    ,
+    {
+        name:'4',
+        height:290,
+        width:220,
+        position:'absolute',
+        backgroundColor:'rgba(130, 238, 154, 0.02)',
+        
+        top:'5%',
         borderRadius:150
     }
 ]
@@ -56,7 +67,7 @@ for(let ED of ElipseDate) {
 
 return(
     <View style={styles.CustomBackground}>
-        {/* {ElipseElement} */}
+        {ElipseElement}
         {props.children}
     </View>
 
