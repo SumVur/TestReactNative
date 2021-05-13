@@ -16,7 +16,7 @@ export const Footer=()=>{
             name='crop-square'
             type='material'
             color='#C9CED7'
-            size={15}
+            size={14}
         />
         )
         
@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     FourSquare:{
-        height:40,
+        height:29,
         flexWrap:'wrap',
-        marginLeft:20
+        marginLeft:20,
     },
     Account:{
         marginRight:20
