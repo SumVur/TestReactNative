@@ -34,8 +34,9 @@ export default class SpendingsMonth extends React.Component {
                 layout={"default"}
                 ref={ref => this.carousel = ref}
                 data={this.state.carouselItems}
-                sliderWidth={300}
+                sliderWidth={280}
                 itemWidth={260}
+                activeSlideAlignment={'center'}
                 renderItem={this._renderItem}
                 onSnapToItem = { index => { this.props.setCount(index);this.setState({activeIndex:index})}} />
                 <TouchableOpacity onPress={() => this.carousel.snapToNext ()}>
