@@ -5,7 +5,7 @@ import { Icon } from 'react-native-elements';
 export const BlockAddBank=()=>{
     return(
         <View style={styles.BlockAddBank}>
-            <Text>Add Bank</Text> 
+            <Text style={{fontSize:12}}>Add Bank</Text> 
             <View style={styles.ButtonbackgroundButtonAddBank} >
             <LinearGradient
                 colors={['#A384F3', '#94DDF4']}

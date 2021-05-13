@@ -24,7 +24,7 @@ export default class CardCarousel extends React.Component {
             type:'MasterCard',
             lastFourNumbe:4355,
             BankName:'Tinkoff Black',
-            amount:12000.54,
+            amount:125000.54,
             colors:[
             '#6A89FD',
             '#50A2FF']
@@ -41,7 +41,7 @@ export default class CardCarousel extends React.Component {
 
     render() {
         return (
-            <View style={{ flexDirection:'row', justifyContent: 'flex-start',display:this.props.display?'flex':'none' }}>
+            <View style={{ flexDirection:'row', justifyContent: 'center',display:this.props.display?'flex':'none' }}>
                 <Carousel
                 layout={"default"}
                 ref={ref => this.carousel = ref}

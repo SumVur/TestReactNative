@@ -23,27 +23,32 @@ export const Card=(props)=>{
     }
     const card=GetCard(props.card.type);
     return (
-        <View >
+        <View style={{ 
+            shadowOffset:{  width: 0,  height: 0,  },
+            shadowColor: 'rgba(164, 130, 238,  0.5)',
+            shadowOpacity: 1,
+            shadowRadius:5,
+            zIndex:1}} >
             <LinearGradient
             colors={[props.card.colors[0], props.card.colors[1]]}
             start={{x: 0, y: 0}} end={{x: 1, y: 0}}
             style={styles.Card}>
                 <View style={styles.CardNumber}>
-                    <View style={{flexDirection:'row',justifyContent:'center',height:25,alignItems:'center'}}>
+                    <View style={{flexDirection:'row',justifyContent:'center',height:19,width:82,alignItems:'center'}}>
                     {card}
                     <Icon
                         name='dots-two-horizontal'
                         type='entypo'
                         color='rgba(255, 255, 255, 0.5)'
-                        
+                        size={18}
                     />
-                    <Text style={{color:'rgba(255, 255, 255, 0.5)'}}>{props.card.lastFourNumbe}</Text>
+                    <Text style={{color:'rgba(255, 255, 255, 0.5)',fontSize:12}}>{props.card.lastFourNumbe}</Text>
                     </View>
                 </View>
                 <View style={styles.CardBalance}>
-                    <Text style={{color:'#FFFFFF',fontSize:25}}>
+                    <Text style={{color:'#FFFFFF',fontSize:20}}>
                         ${ Math.trunc(props.card.amount).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}.{props.card.amount.toString().split('.')[1] ?? 0}</Text>
-                    <Text style={{color:'rgba(255, 255, 255, 0.5)'}}>{props.card.BankName}</Text>
+                    <Text style={{color:'rgba(255, 255, 255, 0.5)',fontSize:12}}>{props.card.BankName}</Text>
 
                 </View>
                 <TouchableOpacity style={{flex:1,justifyContent:'flex-end',margin:20}}>
@@ -61,13 +66,10 @@ export const Card=(props)=>{
 }
 const styles = StyleSheet.create({
     Card: {
-        height:340,
+        height:278,
+        width:195,
         borderRadius:10,
         margin:10,
-        shadowColor: 'rgba(164, 130, 238, 1)',
-        shadowOpacity: 1,
-        shadowRadius:10,
-        zIndex:1
         
     },
     CardNumber:{
@@ -83,8 +85,8 @@ const styles = StyleSheet.create({
     },
     Trash:{
         flexDirection:'row',
-        width:50,
-        height:50,
+        width:44,
+        height:44,
         borderRadius:100,
         justifyContent:'center',
         alignItems:'center',

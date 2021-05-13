@@ -41,8 +41,10 @@ export default class Discounts extends React.Component {
                 layout={"default"}
                 ref={ref => this.carousel = ref}
                 data={this.state.carouselItems}
-                sliderWidth={300}
-                itemWidth={300}
+                sliderWidth={400}
+                itemWidth={320}
+                activeSlideAlignment={'start'}
+                inactiveSlideScale={100}
                 renderItem={this._renderItem}
                 onSnapToItem = { index => this.setState({activeIndex:index}) } />
             </View>

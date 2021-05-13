@@ -8,7 +8,7 @@ import { Icon } from 'react-native-gradient-icon';
 export const SaleItem=(props)=>{
     return(
         <View style={styles.SaleItem}>
-            <ImageBackground source={props.item.img} style={styles.img}>
+            <ImageBackground source={props.item.img} style={styles.img} imageStyle={{ borderRadius: 6}}>
                 <View  style={{flex:0.4, flexDirection:'row', justifyContent:'space-between'}}>
                 <TouchableOpacity style={{margin:20}}>
                     <Icon
@@ -37,19 +37,17 @@ export const SaleItem=(props)=>{
 
 const styles = StyleSheet.create({
     SaleItem: {
-        backgroundColor:'floralwhite',
+        backgroundColor:'#FFFFFF',
         borderRadius: 8,
-        width:280,
-        height: 220,
+        width:301,
+        height:241,
         marginLeft: 25,
         marginRight: 25,
     },
     img:{
         margin:10,
-        height:140,
-        width:260,
-        backgroundColor:"rgba(106, 137, 253, 1)",
-        borderRadius:10,
+        height:159,
+        width:285,
         shadowOffset:{  width: 0,  height: 10,  },
         shadowColor: 'rgba(0, 0, 0, 0.15)',
         shadowOpacity: 1,
@@ -57,8 +55,8 @@ const styles = StyleSheet.create({
     },
     Like:{
         flexDirection:'row',
-        width:30,
-        height:30,
+        width:36,
+        height:36,
         borderRadius:100,
         justifyContent:'center',
         alignItems:'center',
@@ -66,8 +64,8 @@ const styles = StyleSheet.create({
     },
     Del:{
         flexDirection:'row',
-        width:30,
-        height:30,
+        width:34,
+        height:34,
         borderRadius:100,
         justifyContent:'center',
         alignItems:'center',

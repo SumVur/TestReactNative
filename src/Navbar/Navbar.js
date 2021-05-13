@@ -17,7 +17,7 @@ export const Navbar=(props)=>{
                     </View>
                 </View>
             </View>
-            <Text style={{margin:10,fontSize:28}}>My accounts</Text>
+            <Text style={{margin:10,fontSize: 24}}>My accounts</Text>
         </View>
     )
 }

@@ -16,7 +16,7 @@ export default class SpendingsMonth extends React.Component {
 
     _renderItem({item,index}){
         return (
-                <Text style={{alignSelf:'center',fontSize:20}} >{item}</Text>
+                <Text style={{alignSelf:'center',fontSize:16}} >{item}</Text>
         )
     }
 
@@ -51,7 +51,9 @@ export default class SpendingsMonth extends React.Component {
 }
 const styles = StyleSheet.create({
     Month:{
-        height:50, flexDirection:'row', 
+        height:47,
+        width:343,
+        flexDirection:'row', 
         justifyContent: 'center', 
         alignItems:'center',
         padding:10,

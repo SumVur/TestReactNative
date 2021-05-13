@@ -37,7 +37,7 @@ export const Footer=()=>{
                         ]}
                     />
                 </View>
-                <Text>Accounts</Text>
+                <Text style={{fontSize:12}}>Accounts</Text>
             </View>
             <MaterialCommunityIcons style={styles.Account}  name="account" size={24} color="#8C93A1" />
 

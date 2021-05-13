@@ -5,24 +5,26 @@ import { LinearGradient } from 'expo-linear-gradient';
 export const InfoBlockSaleItem=(props)=>{
     return(
         <View  style={styles.InfoBlock}>
-        <View>
-            <Text style={{fontSize:28}}>{props.item.title}</Text>
+            <View style={{ flexDirection:'row', justifyContent:'space-between',paddingLeft:25,paddingRight:25}}>
+                <View>
+                    <Text style={{fontSize:24}}>{props.item.title}</Text>
+                </View>
+                <LinearGradient
+                colors={['#A384F3', '#94DDF4']}
+                start={{x: 0, y: 0}} end={{x: 1, y: 0}}
+                style={styles.Percent}>
+                    <Text style={{color:'#FFFFFF',alignSelf:'center',fontSize:14}}>{props.item.Percent}%</Text>
+                </LinearGradient>
+            </View>
+            <View style={{paddingLeft:25}}>
             <Text style={{color:'#A8ADB7',fontSize:15}}>{props.item.text}</Text>
-        </View>
-            <LinearGradient
-            colors={['#A384F3', '#94DDF4']}
-            start={{x: 0, y: 0}} end={{x: 1, y: 0}}
-            style={styles.Percent}>
-                <Text style={{color:'#FFFFFF',alignSelf:'center',fontSize:18}}>{props.item.Percent}%</Text>
-            </LinearGradient>
+            </View>
     </View>
     )
 }
 const styles = StyleSheet.create({
     InfoBlock:{
-    flexDirection:'row',
-    justifyContent:'space-around',
-    alignItems:'center'
+    flexDirection:'column',
     },
     Percent:{
         overflow:'hidden',
