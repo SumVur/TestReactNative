@@ -34,7 +34,7 @@ export default class SpendingsMonth extends React.Component {
                 layout={"default"}
                 ref={ref => this.carousel = ref}
                 data={this.state.carouselItems}
-                sliderWidth={200}
+                sliderWidth={300}
                 itemWidth={260}
                 renderItem={this._renderItem}
                 onSnapToItem = { index => { this.props.setCount(index);this.setState({activeIndex:index})}} />
@@ -51,7 +51,7 @@ export default class SpendingsMonth extends React.Component {
 }
 const styles = StyleSheet.create({
     Month:{
-        height:47,
+        height:51,
         width:343,
         flexDirection:'row', 
         justifyContent: 'center', 
