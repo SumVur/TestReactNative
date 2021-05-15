@@ -30,7 +30,7 @@ const ElipseDate=[
         height:388.67,
         width:294,
         position:'absolute',
-        backgroundColor:'rgba(130, 160, 238, 0.02)',
+        backgroundColor:'rgba(130, 160, 238, 0.03)',
         left:198,
         top:'70%',
         borderRadius:150
@@ -41,9 +41,9 @@ const ElipseDate=[
         height:290,
         width:220,
         position:'absolute',
-        backgroundColor:'rgba(130, 238, 154, 0.02)',
-        
-        top:'5%',
+        backgroundColor:'rgba(130, 238, 154, 0.03)',
+        left:-18,
+        top:'4%',
         borderRadius:150
     }
 ]

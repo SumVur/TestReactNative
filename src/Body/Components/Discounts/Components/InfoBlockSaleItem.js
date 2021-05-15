@@ -7,7 +7,7 @@ export const InfoBlockSaleItem=(props)=>{
         <View  style={styles.InfoBlock}>
             <View style={{ flexDirection:'row', justifyContent:'space-between',paddingLeft:25,paddingRight:25}}>
                 <View>
-                    <Text style={{fontSize:24}}>{props.item.title}</Text>
+                    <Text style={{fontSize:22,fontWeight:'700'}}>{props.item.title}</Text>
                 </View>
                 <LinearGradient
                 colors={['#A384F3', '#94DDF4']}
@@ -16,8 +16,8 @@ export const InfoBlockSaleItem=(props)=>{
                     <Text style={{color:'#FFFFFF',alignSelf:'center',fontSize:14}}>{props.item.Percent}%</Text>
                 </LinearGradient>
             </View>
-            <View style={{paddingLeft:25}}>
-            <Text style={{color:'#A8ADB7',fontSize:15}}>{props.item.text}</Text>
+            <View style={{paddingLeft:24}}>
+            <Text style={{color:'#A8ADB7',fontSize:13,fontWeight:'700',fontStyle:'normal'}}>{props.item.text}</Text>
             </View>
     </View>
     )

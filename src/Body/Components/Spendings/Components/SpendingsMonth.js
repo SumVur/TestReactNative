@@ -16,7 +16,7 @@ export default class SpendingsMonth extends React.Component {
 
     _renderItem({item,index}){
         return (
-                <Text style={{alignSelf:'center',fontSize:16}} >{item}</Text>
+                <Text style={{alignSelf:'center',fontSize:16,fontWeight:'400'}} >{item}</Text>
         )
     }
 

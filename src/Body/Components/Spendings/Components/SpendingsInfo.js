@@ -4,8 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export const SpendingsInfo=(props)=>{
     return(
         <View style={styles.Spendings}>
-            <Text style={{color:'#5685FD',fontSize:14}}>Spendings</Text>
-            <Text style={{fontSize:16}} >$ {Math.trunc(props.count).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</Text>
+            <Text style={{color:'#5685FD',fontSize:14,fontWeight:'600'}}>Spendings</Text>
+            <Text style={{fontSize:16,fontWeight:'600'}} >$ {Math.trunc(props.count).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}</Text>
         </View>
     )
 }

@@ -9,12 +9,12 @@ export const Card=(props)=>{
             switch (Type) {
             case 'Visa':
                 return(
-                <Image source={require('./img/Visa.png')} style={{resizeMode:'contain',width:50}}></Image>
+                <Image source={require('./img/Visa.png')} style={{resizeMode:'contain',width:35}}></Image>
                 )
                 break;
             case 'MasterCard':
                 return(
-                    <Image source={require('./img/MasterCard.png')} style={{resizeMode:'contain',width:50}}></Image>
+                    <Image source={require('./img/MasterCard.png')} style={{resizeMode:'contain',width:35}}></Image>
                     )
                 break;
             default:
@@ -24,8 +24,8 @@ export const Card=(props)=>{
     const card=GetCard(props.card.type);
     return (
         <View style={{ 
-            shadowOffset:{  width: 0,  height: 0,  },
-            shadowColor: 'rgba(164, 130, 238,  0.5)',
+            shadowOffset:{  width: 0,  height: 5,  },
+            shadowColor: 'rgba(164, 130, 238,  0.2)',
             shadowOpacity: 1,
             shadowRadius:5,
             zIndex:1}} >
@@ -46,7 +46,7 @@ export const Card=(props)=>{
                     </View>
                 </View>
                 <View style={styles.CardBalance}>
-                    <Text style={{color:'#FFFFFF',fontSize:20}}>
+                    <Text style={{color:'#FFFFFF',fontSize:20,fontWeight:'800'}}>
                         ${ Math.trunc(props.card.amount).toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')}.{props.card.amount.toString().split('.')[1] ?? 0}</Text>
                     <Text style={{color:'rgba(255, 255, 255, 0.5)',fontSize:12}}>{props.card.BankName}</Text>
 
@@ -67,9 +67,10 @@ export const Card=(props)=>{
 const styles = StyleSheet.create({
     Card: {
         height:278,
-        width:195,
+        width:200,
         borderRadius:10,
         margin:10,
+        marginLeft:20
         
     },
     CardNumber:{

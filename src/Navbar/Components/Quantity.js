@@ -10,7 +10,7 @@ export const Quantity=()=>{
                 name='clock'
                 type='feather'
             />
-            <Text style={{marginLeft:2}}>$1,340.10</Text>
+            <Text style={{marginLeft:2,fontWeight:'500'}}>$1,340.10</Text>
         </View>  
     )
 }

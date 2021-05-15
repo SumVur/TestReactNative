@@ -47,7 +47,7 @@ export default class CardCarousel extends React.Component {
                 ref={ref => this.carousel = ref}
                 data={this.state.carouselItems}
                 sliderWidth={300}
-                itemWidth={240}
+                itemWidth={220}
                 activeSlideAlignment={'start'}
                 inactiveSlideScale={100}
                 renderItem={this._renderItem}

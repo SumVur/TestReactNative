@@ -16,7 +16,7 @@ export const Spendings=()=>{
         }
     ]
     return(
-        <View style={{alignSelf:'center',marginTop:20}}>
+        <View style={{alignSelf:'center',marginTop:12}}>
             <SpendingsInfo count={mounth[selectindex].amount}></SpendingsInfo>
             <SpendingsMonth setCount={(index) => setCount(index)} mounth={mounth.map((item)=>item.title)}></SpendingsMonth>
         </View>

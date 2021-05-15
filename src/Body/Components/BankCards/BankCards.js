@@ -10,7 +10,7 @@ export const BankCards=()=>{
     return(
         <View style={styles.BankCardsBlock}>
             <TouchableOpacity style={styles.Titlee} onPress={()=>setdisplay(!displayCards)}>
-            <Text style={{paddingLeft:10, fontSize:16}} >Barclays bank</Text>
+            <Text style={{paddingLeft:5, fontSize:17,fontWeight:'500'}} >Barclays bank</Text>
                 <Icon
                         name='chevron-small-up'
                         type='entypo'
@@ -34,7 +34,8 @@ export const BankCards=()=>{
 const styles = StyleSheet.create({
     BankCardsBlock: {
         alignSelf:'center',
-        alignItems:'center'
+        alignItems:'center',
+        marginTop:10
     },
     Titlee:{
         width:360,
